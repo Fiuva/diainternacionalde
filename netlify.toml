@@ -1,7 +1,2 @@
 [build]
 	functions="/functions"
-
-[[redirects]]
-  from = "/.netlify/functions/custom/:mes/:dia"
-  to = "/.netlify/functions/custom/:mes/:dia"
-  status = 200

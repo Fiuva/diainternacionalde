@@ -4,7 +4,7 @@ module.exports.handler = async () => {
     const did = await diainternacionalde.getCategorizedResults();
 
     return {
-        body: did,
+        body: JSON.stringify(did),
         statusCode: 200
     }
 }

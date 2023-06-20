@@ -1,7 +1,7 @@
 module.exports.handler = async (event) => {
     const { path, params } = event;
 
-    if (path === "/custom/:mes/:dia") {
+    if (path === "/.netlify/functions/custom/:mes/:dia") {
         const { mes, dia } = params;
         // Lógica para la ruta /custom/:mes/:dia
         return {

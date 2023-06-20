@@ -3,7 +3,7 @@ const diainternacionalde = require("../src/api");
 module.exports.handler = async (event) => {
     const { path } = event;
 
-    const split = path.split('/custom')[1].split("/")
+    const split = path.split('/diainternacionalde')[1].split("/")
 
     if (split.length >= 3) {
         const mes = split[1];
@@ -19,7 +19,7 @@ module.exports.handler = async (event) => {
     } else {
         // Ruta no encontrada
         return {
-            body: "Error -> /.netlify/functions/custom/:mes/:dia",
+            body: "Error -> /diainternacionalde/:mes/:dia",
             statusCode: 404
         };
     }

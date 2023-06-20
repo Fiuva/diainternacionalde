@@ -2,6 +2,11 @@
 	functions="/functions"
 
 [[redirects]]
-  from = "/actual"
+  from = "/diainternacionalde/actual"
   to = "/.netlify/functions/actual"
+  status = 200
+
+[[redirects]]
+  from = "/diainternacionalde/:mes/:dia"
+  to = "/.netlify/functions/custom/:mes/:dia"
   status = 200

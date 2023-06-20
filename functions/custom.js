@@ -13,7 +13,7 @@ module.exports.handler = async (event) => {
     } else {
         // Ruta no encontrada
         return {
-            body: params,
+            body: JSON.stringify(event),
             statusCode: 404
         };
     }

@@ -65,5 +65,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {},
+  "scripts": {
+    "build": "echo 'Netlify build command'"
+  },
   "description": ""
 }

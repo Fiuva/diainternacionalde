@@ -1,6 +1,5 @@
 module.exports.handler = async (event) => {
     const { path, params } = event;
-    console.log(event);
 
     if (path === "/custom/:mes/:dia") {
         const { mes, dia } = params;
@@ -12,7 +11,7 @@ module.exports.handler = async (event) => {
     } else {
         // Ruta no encontrada
         return {
-            body: "Not Found",
+            body: path,
             statusCode: 404
         };
     }

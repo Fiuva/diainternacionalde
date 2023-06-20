@@ -1,7 +1,7 @@
 const diainternacionalde = require("../src/api")
 
 module.exports.handler = async () => {
-    const did = diainternacionalde.getCategorizedResults();
+    const did = await diainternacionalde.getCategorizedResults();
 
     return {
         body: did,
